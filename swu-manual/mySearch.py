@@ -4,9 +4,9 @@ import argparse
 
 #Setting up Twitter API
 api = twitter.Api(
- consumer_key='hzgVOcyf2JcmzF41b21FHkhY3',
+ consumer_key='#',
  consumer_secret='#',
- access_token_key='209327360-B5ux9W7ocj2EmAJTBJqRu6TtY6M9nl3vrIT5TxgP',
+ access_token_key='#',
  access_token_secret='#'
  )
 
@@ -59,7 +59,7 @@ if args.command != '':
  #Filter Retweets
  'RT @' not in t.text and
  #Filter Direct Tweets
- (args.removedirect == False or '@mytwittername' not in t.text) and
+ (args.removedirect == False or '@ornagle' not in t.text) and
  #Filter out words
  'sex' not in t.text):
  print ''
